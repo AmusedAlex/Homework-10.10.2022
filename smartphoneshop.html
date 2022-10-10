@@ -6,17 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 10.10.2022</title>
     <style>
-        body{
+      body {
         width: 90vh;
         margin-left: auto;
         margin-right: auto;
-        }
+      }
       .imageintable img {
         width: 10vh;
         object-fit: cover;
       }
       .descriptionintable {
         width: 20vh;
+      }
+      .amazon {
+        font-size: 2em;
+      }
+
+      .hidden {
+        visibility: hidden;
       }
     </style>
   </head>
@@ -27,9 +34,8 @@
         Top 5 products
       </thead>
       <tbody class="element">
-        <tr>
-          <tr class="subheader">
-           <th> iPhone 14 pro</th></tr>
+        <tr class="subheader">
+          <th>iPhone 14 pro</th>
           <td class="imageintable">
             <img
               src="https://images.sparhandy.de/images/geraete/17293/10-l.png?tr=n-sh_large"
@@ -42,18 +48,21 @@
           </td>
           <td class="price">Price: 1.299,00€ incl. VAT</td>
           <td>
-            <a href="https://www.amazon.de/Apple-iPhone-14-Pro-128/dp/B0BDJ61GFY/ref=sr_1_1_sspa?keywords=iphone+14+pro&qid=1665405537&qu=eyJxc2MiOiI0LjE1IiwicXNhIjoiMy42NSIsInFzcCI6IjMuMTMifQ%3D%3D&sprefix=iphone+14+pro%2Caps%2C140&sr=8-1-spons&psc=1">shop now on Amazon</a>
+            <a
+              href="https://www.amazon.de/Apple-iPhone-14-Pro-128/dp/B0BDJ61GFY/ref=sr_1_1_sspa?keywords=iphone+14+pro&qid=1665405537&qu=eyJxc2MiOiI0LjE1IiwicXNhIjoiMy42NSIsInFzcCI6IjMuMTMifQ%3D%3D&sprefix=iphone+14+pro%2Caps%2C140&sr=8-1-spons&psc=1"
+              >shop now on Amazon</a
+            >
           </td>
         </tr>
       </tbody>
       <tbody class="element">
-        <tr>
-          <tr class="subheader">
-           <th> iPhone 13</th></tr>
+        <tr class="subheader">
+          <th>iPhone 13</th>
           <td class="imageintable">
             <img
               src="https://www.backmarket.de/cdn-cgi/image/format=auto,quality=75,width=750/https://d1eh9yux7w8iql.cloudfront.net/product_images/512318_707bdda2-9f5b-4486-bab1-c6dc4ad2d1bc.jpg"
-              alt="iPhone13 picture"/>
+              alt="iPhone13 picture"
+            />
           </td>
           <td class="descriptionintable">
             Decription: Lorem ipsum dolor sit amet consectetur, adipisicing
@@ -69,9 +78,8 @@
         </tr>
       </tbody>
       <tbody class="element">
-        <tr>
-          <tr class="subheader">
-           <th> iPhone 12</th></tr>
+        <tr class="subheader">
+          <th>iPhone 12</th>
           <td class="imageintable">
             <img
               src="https://www.backmarket.de/cdn-cgi/image/format=auto,quality=75,width=750/https://d1eh9yux7w8iql.cloudfront.net/product_images/418114_43cbdc46-0a58-409c-ade3-3f1821977ecd.jpg"
@@ -86,14 +94,14 @@
           <td>
             <a
               href="https://www.amazon.de/Neues-Apple-iPhone-12-128-GB/dp/B08L5W8H9T/ref=sr_1_1_sspa?crid=EYRBCA0MM5D8&keywords=iphone+12&qid=1665407315&qu=eyJxc2MiOiI0LjQ1IiwicXNhIjoiNC4wOCIsInFzcCI6IjMuMzgifQ%3D%3D&sprefix=iphone+12%2Caps%2C201&sr=8-1-spons&psc=1"
-              >shop now on Amazon</a>
+              >shop now on Amazon</a
+            >
           </td>
         </tr>
       </tbody>
       <tbody class="element">
-        <tr>
-          <tr class="subheader">
-           <th> iPhone 11</th></tr>
+        <tr class="subheader">
+          <th>iPhone 11</th>
           <td class="imageintable">
             <img
               src="https://www.backmarket.de/cdn-cgi/image/format=auto,quality=75,width=750/https://d1eh9yux7w8iql.cloudfront.net/product_images/290057_aeb6f021-ed9e-45a8-b247-c336792a9dd6.jpg"
@@ -114,9 +122,8 @@
         </tr>
       </tbody>
       <tbody class="element">
-        <tr>
-          <tr class="subheader">
-           <th> iPhone X</th></tr>
+        <tr class="subheader">
+          <th>iPhone X</th>
           <td class="imageintable">
             <img
               src="https://www.backmarket.de/cdn-cgi/image/format=auto,quality=75,width=750/https://d1eh9yux7w8iql.cloudfront.net/product_images/36833_4776bbd6-9959-4ea1-85e1-3214d47d481f.jpg"
@@ -131,27 +138,54 @@
           <td>
             <a
               href="https://www.amazon.de/Apple-iPhone-Display-SIM-Free-General%C3%BCberholt-Space-Grau/dp/B07985C44N/ref=sr_1_1?crid=1TNWVWQ63DY6V&keywords=iphone+X&qid=1665407495&qu=eyJxc2MiOiI0LjEyIiwicXNhIjoiMy4yOSIsInFzcCI6IjIuNTUifQ%3D%3D&sprefix=iphone+x%2Caps%2C167&sr=8-1"
-              >shop now on Amazon</a
-            >
+              >shop now on Amazon
+            </a>
           </td>
         </tr>
       </tbody>
     </table>
-    <textarea name="messageboard" id="messageboard" cols="30" rows="10"></textarea>
-    <footer> <div>Adress: Hohemarkstr. 112a, 61440 Oberursel, Alex' Smartphone Shop</div></footer>
-<script>
-    function changeH1TextColor(){
-document.querySelector('h1')
-.style.color = 'blue';
-}
-changeH1TextColor()
-    function changeBackgroundColor(){
-document.querySelector('body')
-.style.backgroundColor = 'lightblue';
-}
-changeBackgroundColor()
+    <textarea
+      name="messageboard"
+      id="messageboard"
+      cols="30"
+      rows="10"
+    ></textarea>
+    <footer>
+      <div>Adress: Hohemarkstr. 112a, 61440 Oberursel</div>
+      <div>Alex' Smartphone Shop</div>
+    </footer>
+    <script>
+      function changeH1TextColor() {
+        document.querySelector("h1").style.color = "blue";
+      }
+      function changeBackgroundColor() {
+        document.querySelector("body").style.backgroundColor = "lightblue";
+      }
+      function changeFakeFooter() {
+        document.querySelector("footer > div").innerText =
+          "FAKEADRESSE: Zeil 3, 60311 Frankfurt/Main";
+      }
 
+      function addClassToAmazonLink() {
+        for (let node of document.querySelectorAll("a")) {
+          node.classList.add("amazon");
+        }
+      }
+      function toggleImages() {
+        for (let image of document.querySelectorAll("img")) {
+          image.classList.toggle("hidden");
+        }
+      }
+      function setRandomColor() {
+        const color = getRandomColor()
+      }
+      function getRandomColor() {
+        const red = Math.round(Math.random()*255)
+        const green = Math.round(Math.random()*255)
+        const blue = Math.round(Math.random()*255)
 
-</script>  
-</body>
+        return "rgb(" + red + "," + green + ", " + blue)
+      }
+    </script>
+  </body>
 </html>
