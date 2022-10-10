@@ -19,10 +19,10 @@
         width: 20vh;
       }
       .amazon {
-        font-size: 2em;
+        background-color: orange;
       }
 
-      .hidden {
+      .hidepics {
         visibility: hidden;
       }
     </style>
@@ -163,7 +163,7 @@
       }
       function changeFakeFooter() {
         document.querySelector("footer > div").innerText =
-          "FAKEADRESSE: Zeil 3, 60311 Frankfurt/Main";
+          "FAKEADRESS: Zeil 3, 60311 Frankfurt/Main";
       }
 
       function addClassToAmazonLink() {
@@ -173,18 +173,23 @@
       }
       function toggleImages() {
         for (let image of document.querySelectorAll("img")) {
-          image.classList.toggle("hidden");
+          image.classList.toggle("hidepics");
         }
       }
-      function setRandomColor() {
-        const color = getRandomColor()
-      }
-      function getRandomColor() {
-        const red = Math.round(Math.random()*255)
-        const green = Math.round(Math.random()*255)
-        const blue = Math.round(Math.random()*255)
 
-        return "rgb(" + red + "," + green + ", " + blue)
+      function setRandomColor() {
+        const color = getRandomColor();
+        for (let price of document.querySelectorAll("tr > td:nth-child(4)")) {
+          price.style.color = color;
+        }
+      }
+
+      function getRandomColor() {
+        const red = Math.round(Math.random() * 255);
+        const green = Math.round(Math.random() * 255);
+        const blue = Math.round(Math.random() * 255);
+
+        return "rgb(" + red + ", " + green + ", " + blue + ")";
       }
     </script>
   </body>
